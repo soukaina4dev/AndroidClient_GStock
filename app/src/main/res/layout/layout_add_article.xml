@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="183dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/stock2" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="214dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Ajouter un produit"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addProdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Categorie"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/libelleProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="18dp"
+                    android:hint="Libellé"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/addprodQte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:hint="Prix Unitaire"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/valider"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="valider" />
+
+                    <Button
+                        android:id="@+id/retour"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="48dp"
+                        android:text="retour"
+                        android:onClick="retour"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
